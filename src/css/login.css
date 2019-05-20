@@ -1,0 +1,457 @@
+/* 头部 */
+
+#header{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+#login{
+    background:#fff;
+    height: 60px;
+    width: 1200px;
+    position: relative;
+    left: 50%;
+    top:50%;
+    margin-left:-600px;
+    margin-top: -30px;
+}
+#login a{
+    height: 130px;
+    width: 57px;
+}
+#login a img{
+    height: 130px;
+    width: 100px;
+    position: absolute;
+    top:-38px;
+}
+#login span{
+        display: inline-block;
+        height: 30px;
+        width: 890px;
+        background:#FFEFEF;
+        position: absolute;
+        left:125px;
+        top:15px;
+        padding:0 68px;
+        border: 1px solid #FFC0CC;
+        font-size: 11px;
+        line-height: 30px;
+}
+
+/* 内容 */
+#content{
+    height: 600px;
+    width: 100%;
+    background:url(../images/login_bg.png) no-repeat;
+    background-size:auto;
+    background-position: center center;
+    position: relative;
+}
+#lg_content{
+    width: 400px;
+    height: 350px;
+    position: absolute;
+    right:150px;
+    top:100px;
+}
+#btn{
+    width: 100%;
+    height: 54px;
+    text-align: center;
+    border-bottom:1px solid #ccc;
+    background: #ffeceb;
+    opacity: .9;
+}
+#btn a{
+    float: left;
+    height: 54px;
+    width: 50%;
+    text-align: center;
+}
+#btn a{
+    display: block;
+    width: 119px;
+    height: 43px;
+    line-height: 43px;
+    color:#4F3D3B;
+    font-size: 14px;
+    font-weight: 900;
+    margin: 10px 39px 0 39px;
+}
+#btn  .btn_active{
+    color: #FE4869;
+    border-bottom:2px solid #FE4869;
+}
+#btn .login_tabEWM{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background:url("../images/reg_zhuce.png") no-repeat;
+    background-size:100%;
+    background-position: right top;
+    position: absolute;
+    top:5px;
+    right:5px; 
+    cursor: pointer;
+}
+#menu{
+    width: 100%;
+    /* height: 296px; */
+    padding:20px 0 30px 40px;
+    background: #ffeceb;
+    opacity: .9;
+}
+#menu input{
+    height: 42px;
+    width: 315px;
+    border:1px solid #CFCFCF;
+    background:none;
+}
+#login_normal{
+    width: 100%;
+    display: none;
+}
+#menu #username{
+    margin-bottom:18px;
+}
+#menu #username input,#menu #pasw input{
+    padding: 6px;
+}
+#menu #pasw{
+    margin-bottom:18px;
+}
+#menu #sub input{
+    background: #ff5777;
+    cursor:pointer;
+    border-radius:3px;
+    opacity: .9;
+    color:#fff; 
+    font-size: 12px;
+}
+#menu #login_phone input{
+    padding: 6px;
+}
+#menu #login_phone #login_phone_yzm input:nth-child(1){
+    display: inline-block;
+    width: 110px;
+    height: 42px;
+    background: #ff5777;
+    cursor:pointer;
+    opacity: .9;
+    color:#fff; 
+    font-size: 12px;
+    font-size: 12px;
+}
+#menu #login_phone #login_phone_yzm input:nth-child(2){
+    width: 180px;
+    height: 40px;
+    font-size: 12px;
+    margin-left: 20px;
+}
+#menu #login_phone #login_phone_btn,#menu #login_phone #login_phone_yzm{
+    margin-top: 20px;
+}
+#menu #login_phone #login_phone_btn input{
+    background: #ff5777;
+    cursor:pointer;
+    border-radius:3px;
+    opacity: .9;
+    color:#fff; 
+    font-size: 12px;
+}
+#menu p{
+    width: 315px;
+    height: 32px;
+    border: 1px solid #ffd797;
+    background:url(../images/login_point.png) 12px no-repeat #fffff8;
+    color:#ff1877;
+    line-height: 30px;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    display: none;
+}
+.login_inputbox{
+    width: 350px; 
+}
+#menu #login_other{
+    width: 100%;
+    height: 25px;
+    margin-top: 20px;
+}
+#menu #login_other a{
+    display: inline-block;
+    width: 66px;
+    height: 19px;
+    font-size: 12px;
+    color:#333;
+}
+#menu #login_other>a:nth-child(2){
+    margin-left: 50px;
+}
+#menu #login_reg{
+    margin: 25px 0 0 250px;
+}
+#menu #login_reg a{
+    font-size: 12px;
+    text-decoration: underline;
+    color:#959595;
+}
+
+
+.none{
+    display: none;
+}
+
+
+
+#login_ewm{
+    width: 400px;
+    height: 410px;
+    padding: 0 0 30px 44px;
+    background-color:#ffeceb;
+    opacity: .9;
+    position: absolute;
+    right:150px;
+    top:100px;
+}
+#login_tab_dn{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background:url(../images/reg_denglu.png) no-repeat;
+    background-size:100%;
+    background-position: right top; 
+    position: absolute;
+    top:5px;
+    right:5px; 
+    cursor: pointer;
+}
+#scan-login{
+    width:200px;
+    height: 80px;
+    background:url(../images/login_sm.png) no-repeat;
+    margin:30px 0 0 50px;
+}
+#ewm{
+    width: 200px;
+    height: 200px;
+    background:url(../images/logo_ewm.png) no-repeat;
+    background-size:contain;
+    margin-left:50px;
+}
+#login_ewm a{
+    font-size: 18px;
+    text-decoration: underline;
+    height: 30px;
+    color: #333;
+    position: absolute;
+    left: 110px;
+    bottom: 25px;
+}
+
+
+
+
+
+
+/* 底部 */
+#foot{
+    height: 260px;
+    width: 100%;
+    padding-top: 20px;
+    position: relative;
+    background: #F5F5F5;
+}
+#footer{
+    width: 1200px;
+    height: 160px;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-600px;
+}
+#footer #list{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+#footer #list li{
+    float: left;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 5px;
+    border-right: 1px solid #ccc;
+}
+#footer #list li a{
+    color:#737673;
+    font-size: 12px;
+}
+
+#footer .footer_hostname{
+    color:hsla(0,0%,40%,.7);
+}
+#footer .footer_hostname span:nth-child(2){
+    display: inline-block;
+    width: 260px;
+    height: 12px;
+    font-size: 10px;
+    text-align: center;
+    background:#fff;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -130px;
+}
+#footer .footer_hostname .before{
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    border-top:1px solid hsla(0,0%,40%,.7);
+}
+
+#footer .footer_copyright{
+    padding: 20px 80px;
+    color: hsla(0,0%,40%,.7);
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+
+/*完善信息*/
+#information{
+    width: 400px;
+    height: 300px;
+    padding: 20px 0 30px 40px;
+    background: #ffeceb;
+    opacity: .9;
+    position: absolute;
+    top:100px;
+    right:150px;
+    display: none;
+}
+#information p{
+    display: block;
+    width: 315px;
+    height: 32px;
+    border: 1px solid #ffd797;
+    background: url(../images/login_point.png) 12px no-repeat #fffff8;
+    color: #ff1877;
+    line-height: 30px;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+#information input{
+    height: 42px;
+    width: 315px;
+    border: 1px solid #CFCFCF;
+    background: none;
+    vertical-align: middle;
+    padding-left:10px;
+}
+#information .information_name{
+    margin-bottom: 30px;
+}
+#information .information_psw{
+    margin-bottom: 30px;
+}
+#information .information_btn{
+    background: #ff5777;
+    cursor: pointer;
+    border-radius: 3px;
+    opacity: .9;
+    color: #fff;
+    font-size: 12px;
+}
+
+
+/*注册页面*/
+#login_ewm{
+    padding:40px 0 40px 40px;
+}
+#login_ewm input{
+    padding: 6px;
+    height: 42px;
+    width: 315px;
+    border: 1px solid #CFCFCF;
+    background: none;
+    vertical-align: middle;
+}
+#login_ewm #reg_btn{
+    background: #ff5777;
+    cursor: pointer;
+    border-radius: 3px;
+    opacity: .9;
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid #CFCFCF;
+    vertical-align: middle;
+}
+#login_ewm p{
+    text-align:center;
+    display: block;
+    width: 315px;
+    height: 40px;
+    border: 1px solid #ffd797;
+    background:#fffff8;
+    color: #ff1877;
+    line-height: 40px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight:700;
+    border-radius: 5px;
+}
+#login_ewm .zhengque{
+    display: block;
+    position:absolute;
+    right:10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background:url("../images/reg_zhengque.png");
+    background-size:100%;
+    display: none;
+}
+#login_ewm .cuowu{
+    display: block;
+    position:absolute;
+    right:10px;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    background:url("../images/reg_cuowu.png");
+    background-size:100%;
+    display: none;
+}
+.reg_box{
+    width: 100%;
+    height: 42px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.cb{
+    height: 10px;
+    width: 100%;
+    position: relative;
+}
+.cbox{
+    float: left;
+    width: 60px;
+    height: 10px;
+    display: none;
+}
+.cb .cbox:nth-child(1){
+    background:green;
+}
+.cb .cbox:nth-child(2){
+    background:yellow;
+}
+.cb .cbox:nth-child(3){
+    background:red;
+}

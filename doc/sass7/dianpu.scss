@@ -1,0 +1,479 @@
+@charset "utf-8";
+
+body{
+	font: 12px/1.6 tahoma,arial,sans-serif;
+}
+html{
+	color:#333;
+}
+//===================内容区样式======================//
+#content{
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+//===================居中盒子======================//
+	#wrapper{
+	width: 960px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	min-height: 900px;
+//===================wrapper_l======================//
+	.wrapper_l{
+		font-size: 14px;
+		float: left;
+		.show{
+			width: 620px;
+			position: relative;
+			box-shadow: none;
+			background: #fff;
+			border-radius: 10px;
+			.show_lookImg{
+				border-radius: 10px;
+			    overflow: hidden;
+			    border: 1px solid #e5e5e5;
+			}
+			.show_tabImg{
+				width: 620px;
+				height: 54px;
+				margin-top:10px;
+			    overflow-x: auto;
+			    overflow-y: hidden;
+			}
+			.show_suggest{
+				font-weight: 400;
+				margin-top: 24px;
+				font-size: 14px;
+			}
+			.show_other{
+				overflow:hidden;
+				font-size: 12px;
+				margin-top: 50px;
+				margin-bottom: 20px;
+				font-size: 12px;
+			}
+		}
+		.liuyan{
+			width: 620px;
+		    font-size: 14px;
+		    background-color: #fff;
+		    padding-bottom: 60px;
+		    .liuyan_ipt{
+		    	overflow: hidden;
+			    width: 621px;
+			    margin-bottom: 10px;
+			    .liuyan_ipt_txt{
+			    	vertical-align: middle;
+			    	color: #424242;
+		    	    width: 531px;
+				    height: 40px;
+				    line-height: 40px;
+				    padding-left: 10px;
+				    float: left;
+				    border: 1px solid #e5e5e5;
+			    }
+			    .liuyan_ipt_btn{
+		    	    float: right;
+				    width: 84px;
+				    text-align: center;
+				    height: 40px;
+				    line-height: 40px;
+				    color: #fff;
+				    cursor: pointer;
+				    border: none;
+				    border-radius: 2px;
+				    transition: background-color .5s;
+				    background-color: #ffb8c5;
+			    }
+		    }
+		    .liuyan_main{
+				.liuyan_main_item{
+					margin-bottom: 20px;
+					a{
+						width: 48px;
+					    height: 48px;
+					    border-radius: 50%;
+					    overflow: hidden;
+					    float: left;
+					    position: absolute;
+					    .liuyan_main_item_imgbox{
+					    	width: 48px;
+    						height: 48px;
+    						position: relative;
+    						img{
+    							position: absolute;
+							    top: 50%;
+							    left: 0;							    -ms-transform: translateY(-50%);
+							    transform: translateY(-50%);
+							    width: 100%;
+							    height: auto;
+							    display: block;
+							    vertical-align: middle;
+    						}
+					    }
+					}
+					.liuyan_main_item_commen{
+						width: 566px;
+					    margin-left: 56px;
+					    overflow: hidden;
+					    .item_hd{
+				    	 	position: relative;
+				    	 	font-size: 14px;
+    						margin-bottom: 8px;
+    						.item_hd_name{
+    							color: #333;
+    							font-size: 14px;
+    						}
+    						.item_hd_time{
+    							color: #999;
+    							font-size: 12px;
+    						}
+					    }
+					    .item_bd{
+							.item_bd_conten{
+								color: #666;
+    							margin-bottom: 8px;
+							}
+					    }
+					}
+				}
+		    }
+		}
+	}
+	.show_lookImg .show_lookImg_container{
+		width: 620px;
+	    height: 670px;
+		background: #f9f9f9;
+		margin: 0 auto;
+	    position: relative;
+	    overflow: hidden;
+	    list-style: none;
+	    padding: 0;
+	    z-index: 1;
+	    border-radius: 9px;
+	    .shadel,.shader{
+	    	width: 50%;
+	    	height: 100%;
+	    	z-index:10;
+	    }
+	    .show_lookImg_swiper{
+	    	position: absolute;
+		    width: 200%;
+		    height: 100%;
+		    overflow: hidden;
+		    z-index: -1;
+		    .swiper_slide{
+		    	height: 670px;
+    			width: 618px;
+    			float:left;
+    			img{
+    				width: 100%;
+    				height: 90%;
+    				margin-top:35px;
+    			}
+		    }
+	    }
+	}
+	.show_tabImg .show_tabImg_item{
+		width: 60px;
+		height: 54px;
+		cursor: pointer;
+		position: relative;
+		float:left;
+		.activebox{
+			border: 2px solid transparent;
+			overflow: hidden;
+    		margin-right: 6px;
+    		.tabImg_imgbox{
+    			display: block;
+    			width: 50px;
+    			height: 50px;
+    			border-radius: 3px;
+    			overflow: hidden;
+    			position: relative;
+    			img{
+    				position: absolute;
+				    top: 50%;
+				    left: 0;
+				    transform: translateY(-50%);
+				    width: 100%;
+				    height: auto;
+				    display: block;
+    				vertical-align: middle;
+    			}
+    		}
+		}
+		.on{
+			border: 2px solid #f46;
+			overflow: hidden;
+			border-radius: 3px;
+		}
+	}
+	.show_suggest .show_suggest_cont{
+		font-size:14px;
+	}
+	.show_other .show_other_l{
+		span{
+			font-size: 12px;
+			color: #999;
+		}
+		.text-splitter{
+			width: 1px;
+		    height: 11px;
+		    background: #999;
+		    display: inline-block;
+		    margin-left: 5px;
+		    margin-right: 5px;
+		    color: #999;
+		}
+	}
+	.show_other .show_other_r{
+		span{
+			margin-right: 30px;
+			cursor: pointer;
+		}
+		span:nth-child(1){
+			width: 16px;
+		    height: 16px;
+		    background-size: 100% 100%;
+		    position: relative;
+		    background:url('../images/dianpufenxiang.png');
+		}
+		.house span:nth-child(1){
+			display: inline-block;
+		    width: 16px;
+		    height: 16px;
+		    background:url("../images/dianpu_house.png");
+		    background-size: 100% 100%;
+    		margin-right: 4px;
+		}
+		.house span:nth-child(2){
+			font-size:12px;
+			color:#999;
+		}
+		.zan span:nth-child(1){
+			display: inline-block;
+		    width: 16px;
+		    height: 16px;
+		    background:url("../images/dianpu_zan.png");
+		    background-size: 100% 100%;
+    		margin-right: 4px;
+		}
+		.zan span:nth-child(2){
+			color: #f46;
+			font-size:12px;
+		}
+	}
+//===================wrapper_l======================//
+//===================wrapper_r======================//
+
+	    .wrapper_r{
+	    	float: right;
+	    	.more{
+	    		display:inline-block;
+	    		overflow: hidden;
+	    		width: 317px;
+			    border: .5px solid #e5e5e5;
+			    border-radius: 10px;
+			    padding-top: 24px;
+			    .more_touxiang{
+			    	display: flex;
+			    	justify-content: center;
+			    	position: relative;
+			    	cursor: pointer;
+			    	text-align:center;
+			    	div{
+			    		display: inline-block;
+			    		width: 90px;
+					    height: 90px;
+					    border-radius: 45px;
+					    overflow: hidden;
+					    img{
+						    width: 90px;
+						    height: 90px;
+					    	position: absolute;
+						    top: 50%;
+						    transform: translateY(-50%);
+						    display: block;
+						   	vertical-align: middle;
+						   	border-radius:50%;
+					    }
+			    	}
+			    }
+			    .more_name{
+			    	display:flex;
+			    	line-height: 21px;
+			    	justify-content: center;
+			    	cursor: pointer;
+			    	margin-top: 12px;
+			    	text-align: center;
+			    	span{
+					    overflow: hidden;
+					    line-height: 21px;
+					    color: #333;
+			    		font-size: 14px;
+				    	font-weight: 700;
+			    	}
+			    }
+			    .more_txt{
+			    	    padding: 0 20px;
+					    margin-top: 3px;
+					    -webkit-box-orient: vertical;
+					    overflow: hidden;
+					    text-align: center;
+					    font-size:12px;
+					    color:#666;
+			    }
+			    .more_guanzhu{
+			    	    width: 240px;
+					    margin: 14px auto 24px;
+						cursor: pointer;
+						.more_guanzhu_center{
+							width: 100%;
+							overflow:hidden;
+							margin-bottom:20px;
+							.more_guanzhu_center_l{
+								width: 113px;
+							    height: 34px;
+							    line-height: 32px;
+							    border-radius: 24px;
+							    border: 1px solid #f46;
+						        color: #f46;
+						        text-align:center;
+						        float:left;
+							}
+							.more_guanzhu_center_r{
+								width: 113px;
+							    height: 34px;
+							    line-height: 32px;
+							    border-radius: 24px;
+							    border: 1px solid #999;
+							    position: relative;
+							    color:#999;
+						        text-align:center;
+						        float:left;
+						        margin-left:13px;
+							}
+						}
+			    }
+			    .more_fensi{
+			    	border-top: 1px solid #f2f2f2;
+				    border-bottom: 1px solid #f2f2f2;
+				    margin-top: 10px;
+				    padding: 6px 0;
+				    clear: both;
+				    overflow:hidden;
+				    .more_fensi_l,.more_fensi_r{
+				    	width: 50%;
+				    	float:left;
+				    	div{
+				    		text-align: center;
+				    		p{
+				    			color: #999;
+				    			font-size:12px;
+				    		}
+				    		p:nth-child(1){
+				    			color:#000;
+				    		}
+				    	}
+				    }
+			    }
+			    .more_imgbox{
+			    	padding: 22px;
+			    	overflow:hidden;
+			    	margin-bottom:20px;
+			    	a{
+			    		display:inline-block;
+			    		width: 87px;
+					    height: 148px;
+					    margin-bottom: 1px;
+					    margin-right: 1px;
+					    position: relative;
+					    div{
+					    	width: 89px;
+						    height: 148px;
+						    overflow: hidden;
+						    cursor: pointer;
+						    position:relative;
+						    float:left;
+						    img{
+						    	position: absolute;
+							    top: 0;
+							    left: 50%;
+						        transform: translateX(-50%);
+							    height: 100%;
+							    width: auto;
+							    display: block;
+						        border: 0;
+							    vertical-align: middle;
+							    margin-left:8px;
+						    }
+					    }
+			    	}
+			    }
+			    .more_more{
+			    	display:block;
+			    	background: #f9f9f9;
+			    	height: 50px;
+			    	width: 100%;
+			    	line-height:50px;
+			    	text-align:center;
+			    	cursor: pointer;
+			    	clear:both;
+			    	color:#333;
+			    	font-size:16px;
+			    }
+	    	}
+	    	.inter{
+	    		width: 316px;
+	    		margin-top: 24px;
+	    		border-radius: 10px;
+	    		border: .5px solid #e5e5e5;
+    			padding-bottom: 80px;
+    			p{
+				    margin: 0 18px;
+				    height: 58px;
+				    line-height: 58px;
+				    border-bottom: 1px solid #f3f3f3;
+				    position: relative;
+			        font-weight: 700;
+			        color:#333;
+			        font-size:14px;
+    			}
+    			a{
+    				display:block;
+    				width: 280px;
+    				cursor: pointer;
+    				margin: 0 18px;
+				    height: 58px;
+				    line-height: 58px;
+				    border-bottom: 1px solid #f3f3f3;
+				    position: relative;
+				    .inter_name{
+						width: 40px;
+    					height: 40px;
+    					border: 1px solid #ebebeb;
+    					margin-top:8px;
+    					overflow:hidden;
+    					position: relative;
+						float:left;
+						img{
+							width: 40px;
+    						height: 40px;
+    						vertical-align:top;
+						}
+				    }
+				    .inter_txt{
+				    	font-size:14px;
+				    	color:#333;
+				    	width: 235px;
+				    	float:left;
+				    }
+    			}
+	    	}
+	    }
+//===================wrapper_r======================//
+
+	}
+//===================居中盒子======================//
+}
+//===================内容区样式======================//

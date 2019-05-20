@@ -1,0 +1,398 @@
+@charset "UTF-8";
+#bigbox, #bigbox #more {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 
+内容区
+*/
+#bigbox {
+  /* 
+  	导航栏 + 选项卡
+  	⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇
+  */
+  /* 
+  	⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆
+  	导航栏 + 选项卡
+  */
+  /* 
+  	筛选区域
+  	⬇⬇⬇⬇⬇⬇⬇⬇
+   */
+ /* 
+ 	⬆⬆⬆⬆⬆⬆⬆⬆
+	筛选区域
+ */
+  /* 
+  	商品区
+  	⬇⬇⬇⬇⬇⬇⬇⬇
+   */
+  /* 
+  	⬆⬆⬆⬆⬆⬆⬆⬆
+  	商品区
+   */
+  /* 
+  	⬇⬇⬇⬇⬇⬇
+  	点击加载更多
+   */
+ /* 
+	⬆⬆⬆⬆⬆⬆⬆⬆⬆
+	点击加载更多
+ */
+}
+#bigbox #diessing #diessing_big_box {
+  border: 1px solid #e5e5e5;
+}
+#bigbox #diessing #diessing_big_box #diessing_tab {
+  width: 100%;
+  padding-left: 15px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+}
+#bigbox #diessing #diessing_big_box #diessing_tab ul {
+  height: 38px;
+  overflow: hidden;
+  width: 1183px;
+}
+#bigbox #diessing #diessing_big_box #diessing_tab ul li {
+  width: 65px;
+  cursor: pointer;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+}
+#bigbox #diessing #diessing_big_box #diessing_tab ul li a {
+  display: block;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  overflow: hidden;
+  color: #333;
+  font-size: 16px;
+}
+#bigbox #diessing #diessing_big_box #diessing_tab ul .diessing_tab_liactive {
+  border-top: 2px solid #f46;
+  background: #fff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+#bigbox #diessing #diessing_big_box .diessing_box {
+  display: none;
+  width: 100%;
+  height: 280px;
+  padding: 30px 20px 20px 30px;
+}
+#bigbox #diessing #diessing_big_box .diessing_box .diessing_box_left {
+  width: 925px;
+  overflow: hidden;
+  float: left;
+}
+#bigbox #diessing #diessing_big_box .diessing_box .diessing_box_left .diessing_box_left_type {
+  margin-bottom: 30px;
+  float: left;
+  width: 435px;
+  height: 96px;
+  overflow: hidden;
+  margin-right: 25px;
+}
+#bigbox #diessing #diessing_big_box .diessing_box .diessing_box_left .diessing_box_left_type h3 {
+  color: #333;
+  height: 18px;
+  line-height: 18px;
+  font-size: 16px;
+}
+#bigbox #diessing #diessing_big_box .diessing_box .diessing_box_left .diessing_box_left_type ul {
+  margin-top: 10px;
+  vertical-align: top;
+  height: 68px;
+  overflow: hidden;
+}
+#bigbox #diessing #diessing_big_box .diessing_box .diessing_box_left .diessing_box_left_type ul img {
+  width: 66px;
+  height: 66px;
+  float: left;
+  border: 1px solid #f2f2f2;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+}
+#bigbox #diessing #diessing_big_box .diessing_box .diessing_box_left .diessing_box_left_type ul li {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  margin-bottom: 4px;
+}
+#bigbox #diessing #diessing_big_box .diessing_box .diessing_box_left .diessing_box_left_type ul li a {
+  color: #333;
+  display: inline-block;
+  height: 20px;
+  line-height: 11px;
+  padding: 4px 6px;
+  overflow: hidden;
+  font-size: 12px;
+  margin: 0 10px;
+}
+#bigbox #diessing #diessing_big_box .diessing_box .diessing_box_right {
+  float: right;
+  padding-left: 20px;
+  border-left: 1px dashed #e5e5e5;
+  margin-top: -10px;
+}
+#bigbox #diessing #diessing_big_box .diessing_box .diessing_box_right img {
+  width: 200px;
+  height: 240px;
+  vertical-align: middle;
+}
+#bigbox #diessing #diessing_big_box .diessing_box_block {
+  display: block;
+}
+#bigbox #diessing > h3 {
+  line-height: 32px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+#bigbox #wall_nav_box {
+  border: 1px solid #e5e5e5;
+  height: 40px;
+  padding: 7px 0;
+  line-height: 40px;
+  overflow: hidden;
+  font-size: 12px;
+}
+#bigbox #wall_nav_box #wall_nav_box_lf {
+  margin-left: 20px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: top;
+}
+#bigbox #wall_nav_box #wall_nav_box_lf .nav_txt {
+  float: left;
+  width: 46px;
+  height: 24px;
+  line-height: 22px;
+  display: inline-block;
+  border: 1px solid #dadada;
+  font-size: 12px;
+}
+#bigbox #wall_nav_box #wall_nav_box_lf .nav_txt span {
+  float: left;
+  color: #999;
+}
+#bigbox #wall_nav_box #wall_nav_box_lf .nav_txt input {
+  float: left;
+  border: none;
+  width: 32px;
+  height: 22px;
+  outline: 0;
+  line-height: 22px;
+  font-size: 12px;
+}
+#bigbox #wall_nav_box #wall_nav_box_lf .henggang {
+  float: left;
+  margin: 0 5px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #333;
+}
+#bigbox #wall_nav_box #wall_nav_box_lf a {
+  background: 0 0;
+  border: 1px solid #dadada;
+  color: #333;
+  width: 45px;
+  height: 22px;
+  line-height: 22px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 12px;
+}
+#bigbox #goods_bigbox {
+  width: 1225px;
+  height: auto;
+  margin-top: 30px;
+  overflow: hidden;
+  clear: both;
+}
+#bigbox #goods_bigbox #goods_box {
+  display: table;
+}
+#bigbox #goods_bigbox #goods_box .goods_item {
+  position: relative;
+  overflow: hidden;
+  margin: 0 25px 25px 0;
+  width: 218px;
+  border: 1px solid #f2f2f2;
+}
+#bigbox #goods_bigbox #goods_box .goods_item:hover {
+  border: 1px solid #f57;
+}
+#bigbox #goods_bigbox #goods_box .goods_item:hover .goods_item_like {
+  display: block;
+}
+#bigbox #goods_bigbox #goods_box .goods_item .goods_item_like {
+  display: none;
+  height: 24px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 269px;
+  z-index: 5;
+  color: #fff;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: rgba(255, 85, 119, 0.7);
+}
+#bigbox #goods_bigbox #goods_box .goods_item .goods_item_img {
+  display: block;
+  height: 293px;
+  width: 220px;
+  overflow: hidden;
+  position: relative;
+}
+#bigbox #goods_bigbox #goods_box .goods_item .goods_item_img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#bigbox #goods_bigbox #goods_box .goods_item .goods_item_txt {
+  display: block;
+  padding: 0 8px;
+  overflow: hidden;
+}
+#bigbox #goods_bigbox #goods_box .goods_item .goods_item_txt .item_title {
+  height: 40px;
+  margin-bottom: 3px;
+  line-height: 20px;
+  position: relative;
+  margin-top: 6px;
+  font-size: 14px;
+  width: 100%;
+  color: #666;
+  overflow: hidden;
+}
+#bigbox #goods_bigbox #goods_box .goods_item .goods_item_txt .price {
+  height: 25px;
+  line-height: 25px;
+  color: #333;
+  width: 100%;
+}
+#bigbox #goods_bigbox #goods_box .goods_item .goods_item_txt .price .nowprice {
+  color: #333;
+  font-weight: 700;
+  font-size: 16px;
+}
+#bigbox #goods_bigbox #goods_box .goods_item .goods_item_txt .price .oldprice {
+  font-size: 14px;
+  color: #666;
+  margin: 3px 0 0 8px;
+  line-height: 20px;
+}
+#bigbox #goods_bigbox #goods_box .goods_item .goods_item_txt .price .housenum {
+  font-size: 12px;
+  color: #999;
+  line-height: 25px;
+  cursor: pointer;
+}
+#bigbox #goods_bigbox #goods_box .goods_item .goods_item_txt .price .housenum p {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background: url("../images/index_Script.png") no-repeat;
+  background-position: -253px -16px;
+}
+#bigbox #search_empty {
+  width: 1180px;
+  background: #fff2f4;
+  border: 1px solid #fee5ea;
+  padding: 10px 9px;
+  margin-bottom: 25px;
+  margin-top: 30px;
+  color: #333;
+  font-size: 12px;
+  display: none;
+}
+#bigbox #more {
+  height: 50px;
+}
+#bigbox #more a {
+  display: block;
+  width: 650px;
+  height: 40px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+/* 
+	==============分页JQ=================
+
+
+ */
+#paging {
+  width: 310px;
+  height: 40px;
+  position: relative;
+  left: 150px;
+  bottom: 540px;
+  overflow: hidden;
+}
+#paging .paging_left, #paging .paging_page, #paging .paging_right {
+  float: left;
+}
+#paging .paging_page {
+  width: 800px;
+}
+#paging .paging_left, #paging .paging_right {
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  line-height: 30px;
+  background: #fff;
+  cursor: pointer;
+}
+#paging .paging_left {
+  left: 0px;
+  z-index: 10;
+}
+#paging .paging_right {
+  left: 260px;
+  z-index: 10;
+}
+#paging .paging_page {
+  position: absolute;
+  left: 50px;
+  height: 40px;
+}
+#paging .paging_page .paging_pageActive {
+  background-color: orange;
+}
+#paging .paging_page li {
+  float: left;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  margin-left: 30px;
+  border: 1px solid orange;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=details.css.map */

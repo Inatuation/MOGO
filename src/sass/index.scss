@@ -1,0 +1,311 @@
+@charset "utf-8";
+%ct{
+    width: 1200px;
+    margin: 0 auto;
+}
+%Script{
+    background: url(../images/index_Script.png);
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+// 内容区域
+#content{
+    width: 100%;
+    height: auto;
+    position: relative;
+    #content_box{
+        @extend %ct;
+        padding-top: 30px;
+
+        #content_centerTop{
+            width: 710px;
+            height: 1177px;
+            position: absolute;
+            left: 50%;
+            margin-left: -355px;
+            //导购区
+            #centerTop_guide{
+                width: 710px;
+                height: 403px;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 0 18px 0 rgba(0,0,0,.05);
+                margin-top: 24px;
+                background: #fff;
+                #centerTop_guide_top{
+                    width: 100%;
+                    height: 279px;
+                    background:url(../images/guide_bg.gif);
+                    background-repeat: no-repeat;
+                    background-position: top;
+                    background-size: 100%;
+                    overflow: hidden;
+                    margin-bottom: 20px;
+                    padding:55px 0 0 12px;
+                    .guide_top_goods{
+                        float: left;
+                        width: 112px;
+                        height: 112px;
+                        background:url(../images/guide_bottom_goods.png);
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        background-position: 50%;
+                        text-align: center;
+                        p{
+                            font-size: 14px;
+                            color: #333;
+                            margin-top: 75px;
+                            height: 26px;
+                            line-height: 26px;
+                            text-align: center;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                    .shangyi{
+                        background:url("../images/index_shangyi.png");
+                        background-size: 100% 100%;
+                    }
+                    .qunzi{
+                        background:url("../images/index_qunzi.png");
+                        background-size: 100% 100%;
+                    }
+                    .kuzi{
+                        background:url("../images/index_kuzi.png");
+                        background-size: 100% 100%;
+                    }
+                    .neiyi{
+                        background:url("../images/index_neiyi.png");
+                        background-size: 100% 100%;
+                    }
+                    .nvxie{
+                        background:url("../images/index_nvxie.png");                        
+                        background-size: 100% 100%;
+                    }
+                    .baobao{
+                        background:url("../images/index_baobao.png");                                                
+                        background-size: 100% 100%;
+                    }
+                    .peishi{
+                        background:url("../images/index_peishi.png");                                                
+                        background-size: 100% 100%;
+                    }
+                    .nanyou{
+                        background:url("../images/index_nanyou.png");                                                
+                        background-size: 100% 100%;
+                    }
+                    .meizhuang{
+                        background:url("../images/index_meizhuang.png");                                                
+                        background-size: 100% 100%;
+                    }
+                    .muyin{
+                        background:url("../images/index_muyin.png");                                                
+                        background-size: 100% 100%;
+                    }
+                    .jiaju{
+                        background:url("../images/index_jiaju.png");                                                
+                        background-size: 100% 100%;
+                    }
+                    .shipin{
+                        background:url("../images/index_shipin.png");                                                
+                        background-size: 100% 100%;
+                    }
+
+                }
+                // 导购区
+                #centerTop_guide_bottom{
+                    width: 100%;
+                    height: 104px;
+                    padding-bottom: 6px;
+                    a{
+                        color: rgb(51, 51, 51);
+                        background-color: rgb(245, 245, 245);
+                        font-size: 14px;
+                        font-size: 14px;
+                        width: 120px;
+                        height: 35px;
+                        line-height: 35px;
+                        text-align: center;
+                        float: left;
+                        border-radius: 22px;
+                        margin-left: 18px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        margin-bottom: 14px;
+                    }
+                }
+            }
+        }
+        //瀑布流区
+        #content_ppl{
+            @extend %ct;
+            overflow: hidden;
+            #container{
+                #content_left,#content_right,#content_center{
+                    margin-top:1200px;
+                }
+                >ul>li{
+                    border: 1px solid rgba(0,0,0, 0.1);
+                    background: rgba(0, 0, 0, 0.0);
+                    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+                    border-radius: 8px;
+                    position: relative;
+                    img{
+                        border-radius: 8px;
+                    }
+                    .shade{
+                        width: 220px;
+                        cursor: pointer;
+                        background:rgba(0,0,0,.5);
+                        border-radius:8px;
+                        position: absolute;
+                        display: none;
+                        z-index: 3333;
+                        .goods_date{
+                            user-select: text;
+                            word-break: break-all;
+                            position: absolute;
+                            bottom:0;
+                            z-index: 9999;
+                            color: #fff;
+                            display: -webkit-box!important;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 3;
+                            overflow: hidden;
+                            font-size: 14px;
+                            a{  
+                                color: #fff;
+                                font-weight: 700;
+                                text-decoration: underline;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .goods_human{
+                            list-style: none;
+                            position: absolute;
+                            top: 10px;
+                            left: 165px;
+                            font-size: 14px;
+                            z-index: 8888;
+                            color: #fff;
+                            margin: 0;
+                            display:none;
+                            width: 42px;
+                            li{
+                                margin-bottom: 8px;
+                                display: block;
+                                width: 42px;
+                                height: 42px;
+                                z-index: 9999;
+                                color: #fff;
+                                background:url(../images/index_goods_JLT.png);
+                                background-size: 104px 104px;
+                            }
+                            li:nth-child(1){
+                                background-position:-5px -5px;
+                            }
+                            li:nth-child(2){
+                                background-position:-5px -57px;
+                            }
+                            span{
+                                position:absolute;
+                                right:-7px;
+                                top:-5px;
+                                padding:0 5px;
+                                height: 16px;
+                                background:#EC4260;
+                                border-radius:8px;
+                                color:#fff;
+                                font-size:10px;
+                                text-align:center;
+                                line-height:16px;
+                            }
+                            
+                        }
+                    .content_goods_list{
+                        padding: 12px 10px;
+                        margin: -2px -2px 0 0;
+                        background-color: #fff;
+                        border-radius:0 0 8px 8px;
+                        a{
+                            overflow: hidden;
+                            cursor: pointer;
+                            font-size: 12px;
+                            display: inline-block;
+                            max-width: 100%;
+                            height: 21px;
+                            line-height:21px;
+                            background-color: #f1f1f1;
+                            border-radius: 3px;
+                            padding: 0 3px;
+                            margin: 2px 2px 0 0;
+                            white-space: nowrap;
+                            color:#333;
+                        }
+                    }
+                }
+            }
+           
+        }
+
+
+    }
+    
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 瀑布流中间
+#container{
+    width:1200px;
+    overflow: hidden;
+}
+
+#container ul{
+    width:220px;
+    list-style:none;
+    float:left;
+    margin-right:24px;
+}
+
+#container ul li{
+    margin-bottom:20px;
+}
+
+#container ul li img{
+    width:220px;
+}

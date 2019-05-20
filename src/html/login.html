@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base_px.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../lib/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="login">
+            <a href="../01index.html"><img src="../images/login_logo.png" alt=""></a>
+            <span>依《网络安全法》相关要求，即日起蘑菇街会员登陆需绑定手机。为保障您的账户安全及正常使用，如您尚未绑定，请尽快完成绑定，感谢您的理解和支持!</span>
+        </div>
+    </div>
+    <div id="content">
+        <div id="lg_content">
+            <div id="btn">
+                    <a href="javascript:;" class="btn_active">普通登录</a>
+                    <a href="javascript:;">手机无密码登陆</a>
+                    <div class="login_tabEWM"></div>
+                <!-- </div> -->
+            </div>
+            <div id="menu">
+                <p id="pp">请输入用户名/邮箱/手机号</p>
+                <div class="login_inputbox">
+                    <form action="" method="post">
+                        <div id="login_normal" style="display:block">
+                            <div id="username">
+                                <input type="text" placeholder="用户名/邮箱/手机号"  />
+                            </div>
+                            <div id="pasw">
+                                <input type="password" placeholder="密码"  />
+                            </div>
+                            <div id="sub">
+                                <input type="button" value="登录"/>
+                            </div>
+                        </div>
+                        <div id="login_phone" style="display:none">
+                            <div id="login_phone_tel">
+                                <input type="text" placeholder="手机号码">
+                            </div>
+                            <div id="login_phone_yzm">
+                                <input type="button" value="获取动态密码">
+                                <input type="text" placeholder="动态密码注意区分大小写">
+                            </div>
+                            <div id="login_phone_btn">
+                                <input type="button" value="登录">
+                            </div>
+                        </div>
+
+                    </form>
+                            <div id="login_other">
+                                <a href="javascript:;"><img src="../images/login_qq.png" alt="">QQ登录</a>
+                                <a href="javascript:;"><img src="../images/login_wechat.png" alt="">微信登录</a>
+                            </div>
+                            <div id="login_reg">
+                                <a href="javascript:;">忘记密码</a>
+                            </div>
+                </div>
+            </div>
+        </div>
+        <div id="login_ewm" class="none">
+            <div id="login_tab_dn"></div>
+            <p>用户注册</p>
+            <div class="reg_box">
+                <input id="reg_username" type="text" placeholder="用户名：中文、英文、数组、下划线"><span class="zhengque"></span><span class="cuowu"></span>
+            </div>
+            <div class="reg_box">
+                <input id="reg_phone" type="text" placeholder="手机号码"><span class="zhengque"></span><span  class="cuowu"></span>
+            </div>
+            <div class="reg_box">
+                <input id="reg_pas" type="text" placeholder="5~16个字符，英文、数字、下划线"><span class="zhengque"></span><span class="cuowu"></span> 
+                <div class="cb">
+                    <div class="cbox"></div>
+                    <div class="cbox"></div>
+                    <div class="cbox"></div>
+                </div>
+            </div>
+            <div class="reg_box">
+                <input id="reg_btn" type="button" value="注册">
+            </div>
+        </div>
+        <div id="information">
+            <p>由于您第一次登录！请完善您的信息~</p>
+            <input class="information_name" type="text" placeholder="用户名：中文、英文、数组、下划线">
+            <input class="information_psw" type="text" placeholder="6~15位英文数字组合">
+            <input class="information_btn" type="button" value="确定">
+        </div>
+    </div>
+    <div id="foot">
+        <div id="footer">
+            <ul id="list">
+                <li><a href="javascript:;">关于我们</a></li>
+                <li><a href="javascript:;">关于我们</a></li>
+                <li><a href="javascript:;">关于我们</a></li>
+                <li><a href="javascript:;">关于我们</a></li>
+                <li><a href="javascript:;">关于我们</a></li>
+                <li><a href="javascript:;">关于我们</a></li>
+                <li><a href="javascript:;">关于我们</a></li>
+                <li><a href="javascript:;">关于我们</a></li>
+                <li><a href="javascript:;">关于我们</a></li>
+                <li><a href="javascript:;">关于我们</a></li>
+                <li><a href="javascript:;">关于我们</a></li>
+            </ul>
+            <div class="footer_hostname">
+                <span class="before"></span>
+                <span>©2019 Mogujie.com 杭州卷瓜网络有限公司</span>
+            </div>
+            <div class="footer_copyright">
+                <p>营业执照：913301065526808764 | 网络文化经营许可证：浙网文（2016）0349-219号 | 增值电信业务经营许可证：浙B2-20110349 | 安全责任书 | 浙公网安备 33010602002329号 | 互联网药品信息服务资格证书编号：（浙)-经营性-2018-0002 | 浙网食A33010003 | 出版物网络交易平台服务经营备案证 | （浙）网械平台备字[2018]第00006号 |</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
