@@ -137,7 +137,6 @@ fenye();
 					page = $(this).html();
 					 pageUl(page);
 					apply(page);
-					
 
 				});
 
